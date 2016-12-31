@@ -1,0 +1,39 @@
+<div class="wrapper">
+  <div class="container">
+    <h1>Welcome to Hashcode Comments Dashboard</h1>
+
+    <form [formGroup]="loginForm" novalidate
+          (ngSubmit)="login(loginForm.value,loginForm.valid)"
+          class="form-horizontal">
+
+      <input type="email"
+             placeholder="Email"
+             [formControl]="loginForm.controls['email']"
+             id="email">
+
+
+      <input type="password"
+             [formControl]="loginForm.controls['password']"
+             id="password"
+             placeholder="Password">
+
+      <button type="submit" id="login-button">Login</button>
+
+
+    </form>
+  </div>
+
+  <ul class="bg-bubbles">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</div>
+
